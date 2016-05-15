@@ -121,14 +121,14 @@ function checkIfPlayerLost() {
 
 function removeDefeatedDefender() {
      if(heroArray[defenderId].healthPoints < 1) {
-          alert("The defender has been vanquished!");
+          alert("The villain has been vanquished!");
           $(".defender-status").html("Villain Status: ");
           $(".hero-status").html("Hero Status: ");
           $(".currentDefender").remove();
           defenderOccupancyCounter = 0;
           victoryCounter++;
           if (victoryCounter === 3) {
-               alert("You are the Ultimate X- Man!");
+               alert("You are the Ultimate X-Man!");
           }
      }
 }
