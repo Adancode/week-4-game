@@ -1,0 +1,124 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* I used a cool comic book font! */
+@font-face { font-family: "Comic Book"; src: url('../fonts/comic-book-bold.otf'); }
+@font-face { font-family: "Comic Book Bold"; font-weight: bold; src: url('comic-book.otf');}
+
+body {
+     background: url('../img/magneto.jpg') no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
+h1.game-title {
+     font-family: "Comic Book";
+     margin-top: 30px;
+     font-size: 30px;
+     margin-bottom: 30px;
+     color: white;
+}
+
+.show-and-hide {
+     visibility: hidden;
+     background: rgba(0,0,0,0.6);
+     border-radius: 10px;
+}
+
+.fight-section {
+     margin-top: 10px;
+}
+
+h3 {
+     font-family: "Comic Book";
+     font-size: 19px;
+     color: white;
+}
+
+/* I made the image of the hero pop out below its containing div so that it looks more like a comic book */
+.outer-img-container {
+     color: black;
+     box-sizing: border-box;
+     width: 180px;
+     height: 100px;
+     background: white;
+     display: inline-block;
+     border: 4px solid black;
+     font-weight: bold;
+     font-size: 14px;
+}
+
+.hero-images {
+     border: 4px solid black;
+     height: 94px;
+     width: 130px;
+     margin-top: -10px;
+}
+
+p.character-name {
+     margin-bottom: 0px;
+     margin-top: 0px;
+}
+
+/* The good div is the player's selection */
+div.good {
+     background: black;
+     font-size: 14px;
+     color: black;
+     border: 4px solid black;
+     background-color: white;
+}
+
+/* The evil divs are the player's opponents */
+div.evil {
+     color: black;
+     font-size: 14px;
+     border: 4px solid black;
+     margin-left: 4px;
+     margin-right: 4px;
+     background-color: #DA251C;
+
+}
+
+.attack-button {
+     margin-top: 4px;
+     margin-bottom: 12px;
+}
+
+.area1, .area2, .area3, .area4 {
+     margin-top: -20px;
+}
+
+/* I set the sound player to hidden so that it takes up no space on the screen (this project is tight on space), the user can lower volume if needed.  Normally I would include the volume controls, but space is at a premium here. */
+.soundPlayer {
+     visibility: hidden
+}
+
+.health {
+     font-family: "Comic Book";
+     color: white;
+     font-size: 16px;
+     text-shadow: #000 0px 0px 20px;
+     background: rgba(0,0,0,0.6);
+     border-radius: 10px;
+}
+
+/* Button Styles */
+
+button {
+     background-color: #61427C;
+     color: white !important;
+}
+
+div button#btn1:hover, div button#btn2:hover {
+     font-weight: bold;
+}
+
+.restart-div {
+     margin-top: 4px;
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>X Men RPG</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+    <!-- Main area content -->
+     <div class="container text-center">
+          <h1 class="game-title">X-Men RPG! <span class="instructions">select your hero!<span></h1>
+          <div class="first-container">
+          </div> <!-- closes second container -->
+     </div> <!-- closes main container -->
+
+     <div class="container text-center area1">
+          <div class="row">
+               <div class="col-sm-6 your-character">
+                    <h3 class="show-and-hide">Your Hero</h3>
+               </div>
+
+               <div class="col-sm-6 enemies">
+                    <h3 class="show-and-hide">Villains Available To Attack</h3>
+               </div>
+          </div>
+     </div> <!-- closes second container -->
+
+     <!--<div class="container text-center area2">
+          <div class="row">
+
+          </div>
+     </div>--> <!-- closes second container -->
+
+     <h3 class="text-center fight-section">Fight Section</h3>
+
+     <div class="text-center attack-container">
+          <button class="btn btn-sm btn-primary-outline attack-button" id="btn1">Attack</button>
+     </div>
+
+    <div class="container text-center area4">
+      <div class="row">
+           <h3>Villain</h3>
+        <div class="col-sm-12 defender">
+        </div>
+      </div>
+    </div> <!-- closes second container -->
+
+     <div class="text-center restart-div">
+          <button class="btn btn-sm btn-primary-outline restart-button" id="btn2">Restart</button>
+     </div>
+
+     <div class="text-center">
+          <h3 class="hero-status">Hero Status: </h3>
+          <h3 class="defender-status">Villain Status:</h3>
+     </div>
+
+     <div class="text-center soundPlayer">
+          <audio controls autoplay loop>
+               <source src="sounds/xmen.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+     </div>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
