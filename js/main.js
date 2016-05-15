@@ -52,11 +52,21 @@ $(document).ready(function() {
                if (defenderOccupancyCounter === 1) {
                // When the attack button is clicked, the hero's health is damaged by the amount of the defender's counterattack and the defender's health is damaged by the amount of the hero's attack, which increases by 6 after every attack.
                heroArray[playerId].healthPoints = heroArray[playerId].healthPoints - heroArray[defenderId].counterAttackPower;
-               // The selector selects the div with a class of good that has a child paragraph with a class of health, and the html for that paragraph is then updated
-               $("div.good > p.health").html("health: " + heroArray[playerId].healthPoints);
                heroArray[defenderId].healthPoints = heroArray[defenderId].healthPoints - heroArray[playerId].attackPower;
+               // The selector selects the div with a class of good that has a child paragraph with a class of health, and the html for that paragraph is then updated
+               if ( heroArray[playerId].healthPoints > -1) {
+                    $("div.good > p.health").html("health: " + heroArray[playerId].healthPoints);
+               } else {
+                    heroArray[playerId].healthPoints = 0;
+                    $("div.good > p.health").html("health: " + heroArray[playerId].healthPoints);
+               }
                // The selector selects the div with a class of currentDefender that has a child paragraph with a class of health, and the html for that paragraph is then updated
-               $("div.currentDefender > p.health").html("health: " + heroArray[defenderId].healthPoints);
+               if( heroArray[defenderId].healthPoints > -1) {
+                    $("div.currentDefender > p.health").html("health: " + heroArray[defenderId].healthPoints);
+               } else {
+                    heroArray[defenderId].healthPoints = 0;
+                    $("div.currentDefender > p.health").html("health: " + heroArray[defenderId].healthPoints);
+               }
                $(".hero-status").html("Hero Status: You attacked " + heroArray[defenderId].name + " for " + heroArray[playerId].attackPower + " damage!");
                $(".defender-status").html("Villain Status: " + heroArray[defenderId].name + " attacked you for " + heroArray[defenderId].counterAttackPower + " damage!");
                // We need to check if the player lost, if so, the game is reset
