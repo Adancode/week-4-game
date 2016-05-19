@@ -74,7 +74,7 @@ $(document).ready(function() {
                // If the defender lost, the defender is removed from the game
                removeDefeatedDefender();
                // The hero's attackpower increases by 6 after every attack
-               heroArray[playerId].attackPower = heroArray[playerId].attackPower + 6;
+               heroArray[playerId].attackPower = heroArray[playerId].attackPower + heroArray[playerId].attackPowerInc;
           }
      });
 
@@ -159,6 +159,7 @@ var heroArray = [
      img: "img/bishop200x150.jpg",
      healthPoints: 105,
      attackPower: 5,
+     attackPowerInc: 5,
      counterAttackPower: 5
 },
      {
@@ -166,6 +167,7 @@ var heroArray = [
      img: "img/archangel200x150.jpg",
      healthPoints: 110,
      attackPower: 7,
+     attackPowerInc: 7,
      counterAttackPower: 7
 },
 {
@@ -173,6 +175,7 @@ var heroArray = [
      img: "img/gambit200x150.jpg",
      healthPoints: 120,
      attackPower: 9,
+     attackPowerInc: 9,
      counterAttackPower: 9
 },
 {
@@ -180,6 +183,7 @@ var heroArray = [
      img: "img/colossus200x150.jpg",
      healthPoints: 130,
      attackPower: 11,
+     attackPowerInc: 11,
      counterAttackPower: 11
 }
 ];
