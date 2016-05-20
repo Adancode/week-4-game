@@ -145,10 +145,10 @@ function removeDefeatedDefender() {
 
 var myHTML = [];
 var clickCounter = 0;
-var healthPointsArray = [105, 110, 120, 130];
+var healthPointsArray = [150, 156, 159, 190];
 var playerId;
 var defenderId;
-var originalAttackPowerArray = [5, 7, 9, 11];
+var originalAttackPowerArray = [7, 9, 8, 3];
 var defenderOccupancyCounter = 0;
 var victoryCounter = 0;
 
@@ -157,33 +157,33 @@ var heroArray = [
      {
      name: "Bishop",
      img: "img/bishop200x150.jpg",
-     healthPoints: 105,
-     attackPower: 5,
-     attackPowerInc: 5,
-     counterAttackPower: 5
+     healthPoints: 150,
+     attackPower: 7,
+     attackPowerInc: 7,
+     counterAttackPower: 10
 },
      {
      name: "Archangel",
      img: "img/archangel200x150.jpg",
-     healthPoints: 110,
-     attackPower: 7,
-     attackPowerInc: 7,
-     counterAttackPower: 7
-},
-{
-     name: "Gambit",
-     img: "img/gambit200x150.jpg",
-     healthPoints: 120,
+     healthPoints: 156,
      attackPower: 9,
      attackPowerInc: 9,
      counterAttackPower: 9
 },
 {
+     name: "Gambit",
+     img: "img/gambit200x150.jpg",
+     healthPoints: 159,
+     attackPower: 8,
+     attackPowerInc: 8,
+     counterAttackPower: 12
+},
+{
      name: "Colossus",
      img: "img/colossus200x150.jpg",
-     healthPoints: 130,
-     attackPower: 11,
-     attackPowerInc: 11,
-     counterAttackPower: 11
+     healthPoints: 190,
+     attackPower: 3,
+     attackPowerInc: 3,
+     counterAttackPower: 16
 }
 ];
