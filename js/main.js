@@ -6,6 +6,7 @@ $(document).ready(function() {
      }
 
      // This loads the data above onto the html.
+     heroArray[0].healthPoints = 800;
      $(".first-container").html(myHTML);
 
      // When the player's selection is clicked.
